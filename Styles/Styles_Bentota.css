@@ -1,0 +1,289 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+.headerbentota{
+  min-height:75vh;
+  width:100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../Images/Bentota_img/Bentota_header.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+  }
+  nav{
+    background: #000;
+  }
+  nav:after{
+    content: '';
+    clear:both;
+    display: table;
+  }
+  nav .Logo{
+    float: left;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    padding-left: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    background: black;
+    margin:0 5px;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 17px;
+    padding: 9px 15px ;
+  }
+  nav ul li a:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 5px cyan,
+                0 0 5px cyan  ; 
+  }
+  nav ul ul{
+    position: absolute;
+    top:50px;
+    opacity: 0;
+    visibility: hidden;
+  
+  }
+  nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible ;
+  
+  
+  }
+  nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 100px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid white;
+    list-style-type: none;
+  }
+  .show,.icon ,input{
+    display: none;
+  }
+  @media all and (max-width:1030px){
+    nav ul{
+      margin-right: 0px;
+      float: left;
+    }
+    nav img{
+      padding-left: 30px;
+    }
+    nav ul li, nav ul ul li{
+      display: block;
+      width:100%;
+    }
+    nav ul ul{
+      top:70px;
+      position: static;
+      border-top: none;
+      float:none;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+    }
+    .show{
+      display: block;
+      color: white;
+      font-size: 18px;
+      padding: 0 20px;
+      line-height:50px;
+      cursor: pointer;
+    }
+    nav ul a:hover{
+      box-shadow: none;
+    }
+    nav ul ul a{
+      padding-left: 40px;
+    }
+    nav ul ul a{
+      padding-left: 40px;
+    }
+    
+    .show:hover{
+      color: cyan;
+    }
+    .icon{
+      display: block;
+      color: white;
+      position: absolute;
+      right: 40px;
+      line-height:50px;
+      font-size: 25px;
+      cursor: pointer;
+      padding-top: 10px;
+    }
+   
+    .show + a, ul{
+      display: none;
+    }
+    [id^=btn]:checked + ul{
+      display: block;
+    }
+    .text-box{
+      display: none;
+    }
+    ul.Address{
+      display: contents;
+    }
+  
+  }
+.text-box{
+  width:90%;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  left :50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  font-size: 35px;
+}
+body{
+background-color: #000;
+}
+
+.Bentota img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 300px;
+    border-radius: 30px;
+    padding: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bentotacontents{
+  margin:20px;
+  text-align:center;
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #37a9a9;
+  border-radius: 20px;
+}
+.bentotacontents ul{
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: #000;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: #009ABB;
+  text-align: left;
+  transition: 0.5s;
+}
+.bentotacontents ul:hover{
+  transform: scale(1.2);
+}
+.bentotacontents ul li a{
+  color: black;
+  text-decoration: none;
+}
+.bentotacontents p{
+  padding: 20px;
+  border-radius: 10px;
+  border-color: #000;
+  border: 1px solid black;
+  margin: 10px;
+  background-color:#009ABB;
+  color: black;
+}
+.text-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bentotacontents p{
+font-size: 17px;
+}
+.bentotacontents h2{
+    padding: 8px;
+    border-radius: 10px;
+    border:1px solid #000;
+    background-color:black;
+    color: white;
+}
+.image_container{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.image_container2{
+    display: flex;
+    flex-direction: column;
+}
+.text-container2{
+    flex: 1;
+}
+.conservationp{
+    margin: 10px;
+    padding: 10px;
+}
+/*Footer*/
+footer{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid white;  
+  }
+  .about{
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+  .about p{
+    font-size: small;
+    color: darkgrey;
+  }
+  .contact{
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+  .footercontainer{
+    display: flex;
+    gap: 20px;
+    padding: 50px 20px;
+  }
+  .contact ul{
+    list-style-type: none;
+    line-height: 2;
+  }
+  .contact a{
+    color:white;
+    text-decoration: none;
+  }
+  .copyright{
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid gray;
+  }
+  .Address li{
+    font-size: small;
+    color: #777;
+  }
+  .Address{
+    list-style-type: none;
+    line-height: 2;
+  }
+  .Address a{
+    color:white;
+    text-decoration: none;
+  }
+  /*The animation*/
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
