@@ -9,6 +9,16 @@
 <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon_io/favicon-32x32.png">
 <link rel="manifest" href="Images/favicon_io/site.webmanifest">
 <script src="https://kit.fontawesome.com/575a5fa9e8.js" crossorigin="anonymous"></script>
+<script><!--This javaScript is used to dissapear the textbox when the hamburger icon is clicked-->
+  document.addEventListener("DOMContentLoaded", function() {
+    var icon = document.querySelector(".icon");
+    var textBox = document.getElementById("text-box");
+
+    icon.addEventListener("click", function() {
+      textBox.classList.toggle("hidden");
+    });
+  });
+</script>
   </head>
   <body>
     <section class="headercategories">
@@ -39,7 +49,7 @@
           </ul>
         
       </nav>
-      <div class="text-box">
+      <div id="text-box" class="text-box">
         <h1>Turtle Categories of Sri-Lanka</h1>
       </div>
     </section>

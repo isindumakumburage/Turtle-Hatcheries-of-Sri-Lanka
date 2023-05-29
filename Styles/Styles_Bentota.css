@@ -128,11 +128,11 @@
     [id^=btn]:checked + ul{
       display: block;
     }
-    .text-box{
-      display: none;
-    }
     ul.Address{
       display: contents;
+    }
+    .hidden {
+      display: none;
     }
   
   }

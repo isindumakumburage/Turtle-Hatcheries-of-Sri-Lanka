@@ -180,12 +180,11 @@ nav ul ul li{
   ul.Address {
     display: contents;
 }
- .text-box{
+.hidden {
   display: none;
- }
-
 }
-/*Media Queries for the text box*/
+}
+
 
 
 
