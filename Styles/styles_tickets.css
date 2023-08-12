@@ -1,0 +1,446 @@
+.Firstpage{
+  font-family: Arial, sans-serif;
+  background-color: #56cf60;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #333;
+}
+
+.navbar{
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.navbar h1{
+  font-size: 36px;
+  margin: 0;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links li {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.navbar-links a:hover {
+  background-color: #555;
+}
+
+/* Add this CSS to center the content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#purchaseButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+#purchaseButton:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+.left-section {
+  width: 50%;
+}
+
+.summary {
+  width: 45%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.summary h2{
+  text-align: center;
+}
+
+/*.calendar {
+  margin: 20px auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.calendar-grid div {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.calendar-grid div:hover {
+  background-color: #f1f1f1;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#selected-date {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.calendar-nav {
+  margin-bottom: 10px;
+}
+
+#prev-btn,
+#next-btn {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#current-month-year {
+  font-weight: bold;
+  margin: 0 10px;
+}*/
+
+.calendar {
+  margin: 20px auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.calendar h1{
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.calendar-grid div {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.calendar-grid div:hover {
+  background-color: #f1f1f1;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#selected-date {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  color: #007bff;
+}
+
+.calendar-nav {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#prev-btn,
+#next-btn {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #007bff;
+  border-radius: 50%; /* Make the buttons round */
+  padding: 10px; /* Add padding to make the buttons larger and easier to click */
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Add transitions for a smooth hover effect */
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+  color: #0056b3;
+  background-color: #f1f1f1; /* Change background color on hover */
+}
+#current-month-year {
+  font-weight: bold;
+  color: #333;
+  font-size: 20px;
+}
+/*guest part styles*/
+.guest {
+  margin: 20px auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.guest h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.guest div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.guest label {
+  font-size: 16px;
+  color: #333;
+}
+
+.guest button {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.guest button:hover {
+  background-color: #0056b3;
+}
+
+.guest span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.duration{
+  margin: 20px auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex-direction: column;
+
+}
+.duration h2{
+  text-align: center;
+}
+.priceTable{
+  margin: 20px auto;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex-direction: column;
+
+}
+
+
+
+
+/*Details Page*/
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-control {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+#submitBtn{
+  display: block;
+  width: 100%;
+  padding: 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+/*Telephone number validation*/
+
+/*Confirm Page*/
+.confirm{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.confirm h1{
+  text-align: center;
+  margin: 30px 0;
+}
+.confirm p{
+  text-align: center;
+}
+.summaryConfirm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.summaryConfirm h2{
+  text-align: center;
+}

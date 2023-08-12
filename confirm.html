@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="Styles/styles_tickets.css">
+</head>
+<body>
+    <header class="navbar">
+    <h1>Buy Tickets</h1>
+    <ul class="navbar-links">
+      <li><a href="index1.html">Tickets</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="confirm.html">Confirmation</a></li>
+    </ul>
+
+  </header>
+  <div class="confirm">
+  
+    <h1>Confirmation</h1>
+    <p>Thank you for your order. Your order has been confirmed with us. You can show this confirmation at the entrance. Following is the summary of your order.</p>
+    <div class="summaryConfirm">
+        <h2>Summary</h2>
+        <table>
+          <tr>
+          <th>Full Name</th>
+          <td><span id="fullNameDisplay"></span></td>
+        </tr>
+          <tr>
+            <th>Date</th>
+            <td id="selected-date"></td>
+          </tr>
+
+          <tr>
+            <th>Time</th>
+            <td id="selectedTimes">No time slot is selected</td>
+          </tr>
+          <tr>
+            <th>Duration</th>
+            <td id="selectedTimes">1 hrs ( 01 Normal : 00 Peak)</td>
+          </tr>
+          <tr>
+          <th>Mobile</th>
+          <td><span id="mobileNumberDisplay"></span></td>
+        </tr>
+               <tr>
+          <th>Email</th>
+          <td><span id="emailDisplay"></span></td>
+        </tr>
+         <tr>
+          <th>Gender</th>
+          <td><span id="genderDisplay"></td>
+        <tr>
+          <tr>
+            <th>Tickets & Charges</th>
+            <td colspan="2" id="summaryTicketsCharges"></td>
+          </tr>
+          <tr>
+            <th>Category</th>
+            <th>Tickets</th>
+            <th>Charges</th>
+          </tr>
+          <tr>
+            <td>Selected SL Adult Guests:</td>
+            <td><span id="selectedSLAdult">0</span></td>
+            <td><span id="slAdultTicketPrice">$0</span></td>
+          </tr>
+          <tr>
+            <td>Selected SL Child Guests:</td>
+            <td><span id="selectedSLChild">0</span></td>
+            <td><span id="slChildTicketPrice">$0</span></td>
+          </tr>
+          <tr>
+            <td>Selected Foreigner Adult Guests:</td>
+            <td><span id="selectedForeignerAdult">0</span></td>
+            <td><span id="foreignerAdultTicketPrice">$0</span></td>
+          </tr>
+          <tr>
+            <td>Selected Foreigner Child Guests:</td>
+            <td><span id="selectedForeignerChild">0</span></td>
+            <td><span id="foreignerChildTicketPrice">$0</span></td>
+          </tr>
+          <tr>
+            <td>Selected Infant Guests:</td>
+            <td><span id="selectedInfant">0</span></td>
+            <td><span>$0</span></td>
+          </tr>
+  
+          <tr>
+            <td>Total Payable</td>
+            <td colspan="2"><span id="totalTicketPrice">$0</span></td>
+          </tr>
+        </table>
+      </div>
+  </div>
+    <script src="Scripts/scripts.js"></script>
+    <script> 
+      const slAdultTotalPrice = sessionStorage.getItem("slAdultTotalPrice");
+       const slChildTotalPrice = sessionStorage.getItem("slChildTotalPrice");
+       const foreignerAdultTotalPrice = sessionStorage.getItem(
+         "foreignerAdultTotalPrice"
+       );
+       const foreignerChildTotalPrice = sessionStorage.getItem(
+         "foreignerChildTotalPrice"
+       );
+       const totalTicketPrice = sessionStorage.getItem("totalTicketPrice");
+       const NoOfSLAdults=sessionStorage.getItem("NoOfSLAdults");
+       const calendarDate=sessionStorage.getItem("calendarDate");
+       const NoOfSLChild=sessionStorage.getItem("NoOfSLChild");
+       const NoOfForeignAdult=sessionStorage.getItem("NoOfForeignAdult");
+       const NoOfForeignChild=sessionStorage.getItem("NoOfForeignChild");
+       const NoOfInfants=sessionStorage.getItem("NoOfInfants");
+       const Time=sessionStorage.getItem("Time");
+       const fullName=sessionStorage.getItem("fullName");
+       const phone=sessionStorage.getItem("phone");
+       const email=sessionStorage.getItem("email");
+      const gender=sessionStorage.getItem("gender");
+ 
+       // Update the summary table with the retrieved values
+       document.getElementById("slAdultTicketPrice").innerText =
+         slAdultTotalPrice;
+       document.getElementById("slChildTicketPrice").innerText =
+         slChildTotalPrice;
+       document.getElementById("foreignerAdultTicketPrice").innerText =
+         foreignerAdultTotalPrice;
+       document.getElementById("foreignerChildTicketPrice").innerText =
+         foreignerChildTotalPrice;
+       document.getElementById("totalTicketPrice").innerText = totalTicketPrice;
+       document.getElementById("selectedSLAdult").innerText=NoOfSLAdults;
+       document.getElementById("selected-date").innerText=calendarDate;
+       document.getElementById("selectedSLChild").innerText=NoOfSLChild;
+       document.getElementById("selectedForeignerAdult").innerText=NoOfForeignAdult;
+       document.getElementById("selectedForeignerChild").innerText=NoOfForeignChild;
+       document.getElementById("selectedInfant").innerText=NoOfInfants;
+       document.getElementById("selectedTimes").innerText=Time;
+       document.getElementById("fullNameDisplay").innerText=fullName;
+       document.getElementById("mobileNumberDisplay").innerText=phone;
+       document.getElementById("emailDisplay").innerText=email;
+       document.getElementById("genderDisplay").innerText=gender;
+     </script>
+</body>
+</html>

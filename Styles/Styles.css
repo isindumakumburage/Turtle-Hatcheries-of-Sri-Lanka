@@ -13,10 +13,6 @@
   position: relative;
   animation: fadeIn 1s ease-in-out;
 }
-
-
-
-
 /*Header Hikkaduwa*/
 
 .headerhikkaduwa{
@@ -184,10 +180,6 @@ nav ul ul li{
   display: none;
 }
 }
-
-
-
-
 .text-box{
   width:90%;
   color:#fff;
@@ -273,7 +265,6 @@ nav ul ul li{
   background-color:black;
   color: white;
   margin: 10px;
-  border-radius: 10px;
 }
 .helping ul{
   display: inline-block;
@@ -308,8 +299,8 @@ margin-right: auto;
   margin: 10px;
   background-color: #006795;
   color: white;
+  text-align:center;
 }
-
 .Facts h1{
   text-align: center;
 }
@@ -576,6 +567,8 @@ color: #333;
 h3{
   color: #000;
 }
+
+
 .map h3{
   text-align: center;
 }
@@ -589,6 +582,16 @@ h3{
   display: block;
   margin:0 auto;
 }
+.hikkaduwaTickets h3{
+  color: white;
+}
+#ticketsConnect{
+  padding: 5px;
+  margin: 15px;
+}
+
+
+
 /*Table*/
 .summary table{
   width:100%;
